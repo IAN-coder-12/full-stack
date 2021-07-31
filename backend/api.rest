@@ -1,0 +1,11 @@
+###
+GET http://localhost:4000/api/products
+
+###
+POST http://localhost:4000/api/products
+
+###
+PUT  http://localhost:4000/api/products
+
+###
+DELETE http://localhost:4000/api/products
