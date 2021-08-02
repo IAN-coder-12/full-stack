@@ -19,3 +19,7 @@ CREATE TABLE products(
     descripcion VARCHAR(255) NOT NULL
 
 )
+
+INSERT INTO users (username, password, fullname) values ('ian1210', 'JU1Pz,98', 'Ian Hernandez');
+
+UPDATE users SET id = 1 WHERE username = 'ian1210';
