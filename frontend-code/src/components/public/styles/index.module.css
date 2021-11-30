@@ -1,0 +1,122 @@
+:root {
+	--color-primario: #105181;
+	--color-header: #fff;
+	--color-degradado: #072032;
+	--fuente-primaria: 'Fredoka One', cursive;
+	--fuente-secundaria: 'Ubuntu Condensed', sans-serif;
+	--fuente-terciaria: 'Roboto', sans-serif
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}   
+
+.contenedor {
+	background: var(--color-degradado);
+	width: 100%;
+	margin: 0 auto;
+	height: auto
+}
+
+.contenedor__fondo {
+	position: relative;
+	height: 800px;
+	width: auto
+}
+
+.contenedor__fondo::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(7, 32, 50, 0.671)
+}
+
+.fondo__img {
+	display: block;
+	height: 800px;
+	width: auto
+}
+
+.contenedor__titular {
+	position: absolute;
+	color: #fff;
+	font-family: var(--fuente-primaria);
+	font-size: 52px;
+	width: 420px;
+	height: 240px;
+	margin-left: 80px;
+	margin-top: -590px
+}
+
+.contenedor__tarjet {
+	position: absolute;
+	margin-top: -580px;
+	margin-left: 800px;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.contenedor__tarjet .div {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	background: #fff;
+	position: relative;
+	height: 250px;
+	width: 150px;
+	text-align: center;
+	margin-left: 20px
+}
+
+.contenedor__tarjet .div::after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: calc(50% - 55px);
+	bottom: -55px;
+	border-top: 55px solid var(--color-header);
+	border-right: 55px solid var(--color-header);
+	border-left: 55px solid transparent;
+	border-bottom: 55px solid transparent;
+	border-radius: 6px;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg)
+}
+
+.contenedor__tarjet .div:hover {
+	-webkit-transform: scale(1);
+	transform: scale(1.05)
+}
+
+.contenedor__tarjet .a {
+	font-family: var(--fuente-secundaria);
+	font-size: 22px;
+	color: var(--color-degradado);
+	text-decoration: none;
+	text-align: center
+}
+
+.contenedor__tarjet .i {
+	display: block;
+	margin: 50px auto;
+	color: var(--color-degradado);
+	font-size: 60px
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+		width: 100%;
+		height: 40px
+	}
+	.header__img {
+		width: 30%;
+		height: auto
+	}
+}
